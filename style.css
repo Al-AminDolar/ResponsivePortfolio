@@ -79,6 +79,9 @@ body{
 .home-content p{
     font-size: 20px;
 }
+.home-content span{
+    color: #0ef;
+}
 
 .home-sci a{
     display: inline-flex;
