@@ -28,7 +28,20 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-   
+    cursor: default;
+    opacity: 0;
+    animation: slideToRight 1s ease forwards;
+}
+
+@keyframes slideToRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(100px);
+    opacity: 1;
+    }
 }
 
 .navbar a{
@@ -38,7 +51,19 @@ body{
     font-weight: 500;
     color: #fff;
     margin-left: 35px;
-    transition: .3s;
+    opacity: 0;
+    animation: slideToTop .7s ease forwards;
+}
+
+@keyframes slideToTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0px;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .navbar a:hover{
@@ -63,13 +88,41 @@ body{
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
+    animation: slideH3 .7s ease forwards;
 }
+
+@keyframes slideH3{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translateX(0px);
+    opacity: 1;
+    }
+}
+
+
+
 
 .home-content h1{
     font-size: 56px;
     font-weight: 700px;
     margin: -3px 0;
+    opacity: 0;
+    animation: slideH1 1s ease forwards;
 }
+@keyframes slideH1{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translatey(0px);
+    opacity: 1;
+    }
+}
+
 
 .image-sectin img {
     width: 50vh;
@@ -81,6 +134,10 @@ body{
 }
 .home-content span{
     color: #0ef;
+}
+
+.home-content h3:nth-of-type(1){
+    margin-bottom: 30px;
 }
 
 .home-sci a{
@@ -96,7 +153,20 @@ body{
     border-radius: 50%;
     font-size: 20px;
     margin: 30px 15px 30px 0;
+    animation: slideIcon 1s ease forwards;
 }
+
+@keyframes slideIcon{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+    transform: translatey(0px);
+    opacity: 1;
+    }
+}
+
 
 .home-sci a:hover{
     background: #0ef;
