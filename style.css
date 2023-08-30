@@ -266,6 +266,7 @@ body{
     font-weight: 13px;
     padding: 40px;
     box-shadow: 1px 1px 20px #0ef;
+    transition: ease-in-out .3s;
 }
 
 .services-list div i{
@@ -306,4 +307,10 @@ body{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
+}
+
+
+.services-list div:hover{
+    transform: translateY(-10px);
+
 }
